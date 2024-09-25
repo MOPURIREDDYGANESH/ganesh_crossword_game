@@ -55,7 +55,7 @@ function startTimer() {
 // Show the start dialog
 function showStartDialog() {
     Swal.fire({
-        title: "WELCOME TO GANESH'S CROSSWORD GAME",
+        title: "CROSSWORD BY GANESH",
         input: 'text',
         inputLabel: 'ENTER YOUR NAME',
         inputPlaceholder: 'Enter your name',

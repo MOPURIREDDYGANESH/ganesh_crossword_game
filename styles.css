@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#crossword-grid {
+    display: grid;
+    grid-template-columns: repeat(13, 30px); /* Adjust the size as needed */
+    gap: 2px;
+    margin-bottom: 20px;
+}
+
+#crossword-grid input {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase; /* Ensure input is in uppercase */
+}
+
+#crossword-grid input:disabled {
+    background-color: rgb(51, 48, 48);
+    border: 1px solid #000;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#status {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#check-answers {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#reset-game {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#give-hint {
+    background-color: #ffc107;
+    color: #212529;
+}

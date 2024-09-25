@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Crossword Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div id="game-container" style="display:none;">
+        <h2 align="center">GANESH'S CROSSWORD GAME </h2>
+        <div id="crossword-grid"></div>
+        <div id="controls">
+            <button id="check-answers">Check Answers</button>
+            <button id="reset-game">Reset Game</button>
+            <button id="give-hint">Hint (<span id="hint-count">3</span> left)</button>
+        </div>
+        <div id="status">
+            <p>Time: <span id="timer">00:00</span></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
